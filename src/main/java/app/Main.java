@@ -1,28 +1,36 @@
 package app;
 
 public class Main {
-    private static final double CONV_K = 2.20462;
-
     public static void main(String[] args) {
-        System.out.println("Converter App.");
+        // Отримуємо масив даних
+        String[] data = getData();
 
-        double kgs = 5;
-        double pnds = 12;
-        double pounds = convKgsToPounds(kgs);
-        double kilos = convPoundsToKgs(pnds);
-        System.out.println("Result is" + pounds + " pounds and" + kilos + "kgs.");
-        System.out.println("Version 1.0.");
+        // Створюємо об'єкт споживача
+        Customer customer = getCustomer(data);
+
+        // Формуємо рядок виводу, звертаючись до методів об'єкта customer
+        String output = "Customer: " + customer.getName() +
+                ", phone " + customer.getPhone();
+
+        // Виводимо результат
+        getOutput(output);
     }
 
-    private static double convKgsToPounds(double kgs) {
-        return kgs * CONV_K;
+    public static String[] getData() {
+        // Повертаємо масив із тестовими даними
+        return new String[]{"Tom", "555 123-8596"};
     }
 
-    private static double convPoundsToKgs(double pnds) {
-        return pnds / CONV_K;
+    public static Customer getCustomer(String[] data) {
+        // Створюємо об'єкт, використовуючи дані з масиву
+        return new Customer(data[0], data[1]);
     }
 
+    public static void getOutput(String output) {
+        // Виведення інформації у консоль
+        System.out.println(output);
 
+    }
 }
 
 
