@@ -1,8 +1,7 @@
 package app;
 
 public class Customer {
-// Виправте декларацію змінних класу
-    // Виправте декларацію змінних класу
+
 private final String name;
     private final String phone;
 
@@ -12,7 +11,7 @@ private final String name;
         this.phone = phone;
     }
 
-    // 3. Getters для всіх змінних класу
+   
     public String getName() {
         return name;
     }
