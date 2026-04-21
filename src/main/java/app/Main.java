@@ -1,36 +1,20 @@
+
+
 package app;
 
-public class Main {
-    public static void main(String[] args) {
-        // Отримуємо масив даних
-        String[] data = getData();
+public class Customer {
+    private final String name;
+    private final String phone;
 
-        // Створюємо об'єкт споживача
-        Customer customer = getCustomer(data);
-
-        // Формуємо рядок виводу, звертаючись до методів об'єкта customer
-        String output = "Customer: " + customer.getName() +
-                ", phone " + customer.getPhone();
-
-        // Виводимо результат
-        getOutput(output);
+    public Customer(String name, String phone) {
+        this.name = name;
+        this.phone = phone;
     }
 
-    public static String[] getData() {
-        // Повертаємо масив із тестовими даними
-        return new String[]{"Tom", "555 123-8596"};
+    public String getName() {
+        return name;
     }
 
-    public static Customer getCustomer(String[] data) {
-        // Створюємо об'єкт, використовуючи дані з масиву
-        return new Customer(data[0], data[1]);
+    public String getPhone() {
+        return phone;
     }
-
-    public static void getOutput(String output) {
-        // Виведення інформації у консоль
-        System.out.println(output);
-
-    }
-}
-
-
