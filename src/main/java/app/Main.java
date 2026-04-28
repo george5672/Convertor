@@ -1,20 +1,25 @@
-
-
 package app;
 
-public class Customer {
-    private final String name;
-    private final String phone;
+public class Main {
 
-    public Customer(String name, String phone) {
-        this.name = name;
-        this.phone = phone;
+    public static void main(String[] args) {
+        Customer customer = getCustomer(getData());
+
+        getOutput("Customer: %s, phone: %s".formatted(
+                customer.getName(),
+                customer.getPhone()
+        ));
     }
 
-    public String getName() {
-        return name;
+    public static String[] getData() {
+        return new String[]{"Tom", "555 123-8596"};
     }
 
-    public String getPhone() {
-        return phone;
+    public static Customer getCustomer(String[] data) {
+        return new Customer(data[0], data[1]);
     }
+
+    public static void getOutput(String output) {
+        System.out.println(output);
+    }
+}
