@@ -15,12 +15,12 @@ public class Main {
 
         CalcCostDelivery costDelivery = new CalcCostDelivery();
         double deliveryCost = costDelivery.CalcCostDelivery(product);
-        // Формуємо виведення
+
         String baseOutput = product + "\nCost is " +
                 Constants.CURRENCY + " " + baseCost + ".";
         String deliveryOutput = product + "\nCost is " +
                 Constants.CURRENCY + " " + deliveryCost + ".";
-        // Виводимо результат
+     
         getOutput(baseOutput);
         getOutput(deliveryOutput);
     }
