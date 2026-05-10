@@ -25,7 +25,7 @@ public class Main {
         getOutput(deliveryOutput);
     }
 
-    // Набір вхідних даних
+   
     public static String[] getData() {
         return new String[] {"abc", "5", "2.5"};
     }
