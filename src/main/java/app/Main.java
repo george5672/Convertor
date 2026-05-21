@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         String[] data = getData();
 
         Product product = new Product(data[0],
