@@ -3,16 +3,22 @@ package app;
 public class Corrector {
 
     public String handleData(String[] strs) {
-        StringBuilder HandlData = new StringBuilder();
+        StringBuilder handlData = new StringBuilder();
         int count = 0;
-        for (String str : strs) {
-            if (str.("b","o") {
 
-                str = str.replace("b", "o");
-            }
+        for (String str : strs) {
+
+            String updatedStr = str.replace("b", "o");
+
             count++;
-            StringBuilder.append(count+.append(") count++ ").append(str).append("\\n");
+
+
+            handlData.append(count)
+                    .append(") ")
+                    .append(updatedStr)
+                    .append("\n");
         }
-        return StringBuilder.toString();
+
+        return handlData.toString();
     }
 }
