@@ -1,14 +1,48 @@
 package app;
 
+import javax.annotation.processing.FilerException;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 public class Main {
 
+    static double balance;
+
     public static void main(String[] args) {
-        DataProvider dataProvider = new DataProvider();
-        String result = new Corrector().handleData(dataProvider.getElements());
-        getOutput(result);
+       double  balance  =    getAmount();
+        validateAmount(balance, getAmount());
     }
 
-    private static void getOutput(String output) {
-        System.out.println(output);
+    private static double getBalance() {
+        return 1000.00; // Наявні кошти на рахунку
+    }
+
+    private static double getAmount() {
+        System.out.printf("Balance is USD %.2f.%n" +
+                "Enter purchase amount, USD: ", balance);
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+    }
+
+    // Метод валідації наявних коштів
+    private static void validateAmount(double balance, double withdrawal) {
+        if (withdrawal >balance) {
+            try {
+
+                throw new RuntimeException("Insufficient funds!");
+            } catch (RuntimeException ex) {
+
+                System.out.println(ex.getMessage());
+            }
+        } else {
+            balance = getBalance(balance, withdrawal);
+            System.out.printf("Funds are OK. Purchase paid." +
+                    "%nBalance is USD %.2f", balance);
+        }
+    }
+
+
+    private static double getBalance(double balance, double withdrawal) {
+        return balance  ;
     }
 }
