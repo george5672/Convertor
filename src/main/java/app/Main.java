@@ -1,48 +1,37 @@
 package app;
 
-import javax.annotation.processing.FilerException;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
-
 public class Main {
 
-    static double balance;
-
     public static void main(String[] args) {
-       double  balance  =    getAmount();
-        validateAmount(balance, getAmount());
+
+
+        String[] data = getData();
+
+        Product product = new Product(data[0],
+                Integer.parseInt(data[1]),
+                Double.parseDouble(data[2]));
+
+        CalcCostBase costBase = new CalcCostBase();
+        double baseCost = costBase.CalcCostBase(product);
+
+        CalcCostDelivery costDelivery = new CalcCostDelivery();
+        double deliveryCost = costDelivery.CalcCostDelivery(product);
+
+        String baseOutput = product + "\nCost is " +
+                Constants.CURRENCY + " " + baseCost + ".";
+        String deliveryOutput = product + "\nCost is " +
+                Constants.CURRENCY + " " + deliveryCost + ".";
+     
+        getOutput(baseOutput);
+        getOutput(deliveryOutput);
     }
 
-    private static double getBalance() {
-        return 1000.00; // Наявні кошти на рахунку
+   
+    public static String[] getData() {
+        return new String[] {"abc", "5", "2.5"};
     }
 
-    private static double getAmount() {
-        System.out.printf("Balance is USD %.2f.%n" +
-                "Enter purchase amount, USD: ", balance);
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextDouble();
-    }
-
-    // Метод валідації наявних коштів
-    private static void validateAmount(double balance, double withdrawal) {
-        if (withdrawal >balance) {
-            try {
-
-                throw new RuntimeException("Insufficient funds!");
-            } catch (RuntimeException ex) {
-
-                System.out.println(ex.getMessage());
-            }
-        } else {
-            balance = getBalance(balance, withdrawal);
-            System.out.printf("Funds are OK. Purchase paid." +
-                    "%nBalance is USD %.2f", balance);
-        }
-    }
-
-
-    private static double getBalance(double balance, double withdrawal) {
-        return balance  ;
+    public static void getOutput(String output) {
+        System.out.println(output);
     }
 }
