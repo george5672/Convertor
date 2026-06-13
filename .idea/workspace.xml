@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added  Main">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/FundsException.java" afterDir="false" />
+    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added  FundException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/Convertor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Corrector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/DataProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/FundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/FundsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,6 +225,7 @@
     <MESSAGE value="Added  Constants" />
     <MESSAGE value="Added  DataProvider" />
     <MESSAGE value="Added  Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  Main" />
+    <MESSAGE value="Added  FundException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added  FundException" />
   </component>
 </project>

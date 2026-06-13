@@ -1,37 +1,46 @@
+
 package app;
+
+import java.util.Scanner;
 
 public class Main {
 
+
+    static double balance = 1000.00;
+
     public static void main(String[] args) {
 
+        double amount = getAmount();
 
-        String[] data = getData();
 
-        Product product = new Product(data[0],
-                Integer.parseInt(data[1]),
-                Double.parseDouble(data[2]));
-
-        CalcCostBase costBase = new CalcCostBase();
-        double baseCost = costBase.CalcCostBase(product);
-
-        CalcCostDelivery costDelivery = new CalcCostDelivery();
-        double deliveryCost = costDelivery.CalcCostDelivery(product);
-
-        String baseOutput = product + "\nCost is " +
-                Constants.CURRENCY + " " + baseCost + ".";
-        String deliveryOutput = product + "\nCost is " +
-                Constants.CURRENCY + " " + deliveryCost + ".";
-     
-        getOutput(baseOutput);
-        getOutput(deliveryOutput);
+        validateAmount(balance, amount);
     }
 
-   
-    public static String[] getData() {
-        return new String[] {"abc", "5", "2.5"};
+    private static double getAmount() {
+        System.out.printf("Balance is USD %.2f.%n" +
+                "Enter purchase amount, USD: ", balance);
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
     }
 
-    public static void getOutput(String output) {
-        System.out.println(output);
+    private static void validateAmount(double currentBalance, double withdrawal) {
+        if (withdrawal > currentBalance) {
+            try {
+                throw new FundsException("Insufficient funds!");
+            } catch (FundsException ex) {
+
+                System.out.println(ex.getMessage());
+            }
+        } else {
+
+            balance = calculateNewBalance(currentBalance, withdrawal);
+            System.out.printf("Funds are OK. Purchase paid.%n" +
+                    "Balance is USD %.2f%n", balance);
+        }
+    }
+
+
+    private static double calculateNewBalance(double currentBalance, double withdrawal) {
+        return currentBalance - withdrawal;
     }
 }
