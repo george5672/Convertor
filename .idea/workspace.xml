@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added  FundException">
+    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added Fund">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Main2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/Convertor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Corrector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/FundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/FundsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1779394462627</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added  FundException">
+      <created>1781360722926</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1781360722926</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added Fund">
+      <created>1781360866339</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1781360866339</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +237,7 @@
     <MESSAGE value="Added  DataProvider" />
     <MESSAGE value="Added  Main" />
     <MESSAGE value="Added  FundException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added  FundException" />
+    <MESSAGE value="Added Fund" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Fund" />
   </component>
 </project>
