@@ -20,7 +20,7 @@ public class Project {
         return miles * 1.60934;
     }
 
-    // Метод для конвертації кілометрів в милі
+
     public static double kmTOMiles(double kilometers) {
         return kilometers / 1.60934;
     }
