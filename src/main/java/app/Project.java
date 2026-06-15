@@ -10,7 +10,6 @@ public class Project {
         double miles = 5.0;
         System.out.println(miles + " миль = " + milesTOKm(miles) + " км");
 
-
         double kilometers = 10.0;
         System.out.println(kilometers + " км = " + kmTOMiles(kilometers) + " миль");
     }
