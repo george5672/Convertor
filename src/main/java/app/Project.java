@@ -1,4 +1,6 @@
-public class Main2 {
+package app;
+
+public class Project {
     public static void main(String[] args) {
 
         System.out.println("Проект: Converter (Версія 2.0)");
@@ -18,6 +20,7 @@ public class Main2 {
         return miles * 1.60934;
     }
 
+    // Метод для конвертації кілометрів в милі
     public static double kmTOMiles(double kilometers) {
         return kilometers / 1.60934;
     }
