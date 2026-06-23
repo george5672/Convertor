@@ -1,46 +1,25 @@
-
 package app;
-
-import java.util.Scanner;
 
 public class Main {
 
-
-    static double balance = 1000.00;
-
     public static void main(String[] args) {
 
-        double amount = getAmount();
+        DataProvider provider = new DataProvider();
+        DataHandler dataHandler = new DataHandler();
 
 
-        validateAmount(balance, amount);
-    }
+        String namesOutput = dataHandler.formatItems(provider.getProductNames());
+        getOutput("Products: " + namesOutput);
 
-    private static double getAmount() {
-        System.out.printf("Balance is USD %.2f.%n" +
-                "Enter purchase amount, USD: ", balance);
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextDouble();
-    }
 
-    private static void validateAmount(double currentBalance, double withdrawal) {
-        if (withdrawal > currentBalance) {
-            try {
-                throw new FundsException("Insufficient funds!");
-            } catch (FundsException ex) {
-
-                System.out.println(ex.getMessage());
-            }
-        } else {
-
-            balance = calculateNewBalance(currentBalance, withdrawal);
-            System.out.printf("Funds are OK. Purchase paid.%n" +
-                    "Balance is USD %.2f%n", balance);
-        }
+        String salesOutput = dataHandler.formatItems(provider.getFormattedSales());
+        getOutput("Sales, EUR: " + salesOutput);
     }
 
 
-    private static double calculateNewBalance(double currentBalance, double withdrawal) {
-        return currentBalance - withdrawal;
+    private static void getOutput(String output) {
+        System.out.println(output);
     }
 }
+
+

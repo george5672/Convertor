@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added gtyfjojoko">
+    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added Project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/DataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/DataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -244,7 +248,21 @@
       <option name="project" value="LOCAL" />
       <updated>1781546786608</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added gtyfjojoko">
+      <created>1781548856382</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1781548856382</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Project">
+      <created>1781549193767</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1781549193767</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +293,7 @@
     <MESSAGE value="Added Main2" />
     <MESSAGE value="Added gtyf" />
     <MESSAGE value="Added gtyfjojoko" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gtyfjojoko" />
+    <MESSAGE value="Added Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Project" />
   </component>
 </project>
