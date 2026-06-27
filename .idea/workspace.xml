@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added Project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/DataHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/DataProvider.java" afterDir="false" />
+    <list default="true" id="813216b4-c019-484e-aaaa-c45f3775762e" name="Changes" comment="Added Main">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Convertor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="GitIgnore" />
   </component>
-  <component name="RunManager" selected="Application.Main2 (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Customer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Customer" />
       <module name="Converter" />
@@ -98,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main2 (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main2 (1)" />
         <item itemvalue="Application.Customer" />
         <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main" />
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1781549193767</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added Main">
+      <created>1782216128719</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1782216128719</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +290,6 @@
     <MESSAGE value="Added new System.out" />
     <MESSAGE value="Added System.out Version 1" />
     <MESSAGE value="Added System.out Customer" />
-    <MESSAGE value="Added Main" />
     <MESSAGE value="Added Product" />
     <MESSAGE value="Added  Constants" />
     <MESSAGE value="Added  DataProvider" />
@@ -294,6 +300,7 @@
     <MESSAGE value="Added gtyf" />
     <MESSAGE value="Added gtyfjojoko" />
     <MESSAGE value="Added Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Project" />
+    <MESSAGE value="Added Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Main" />
   </component>
 </project>
